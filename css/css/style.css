@@ -289,3 +289,67 @@
     align-items: flex-start;
   }
 }
+
+.rozana-products {
+  padding-top: 32px;
+}
+
+.product-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.product-toolbar label {
+  font-weight: 600;
+}
+
+.product-toolbar select {
+  padding: 8px 12px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding-bottom: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+.product-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.product-card h2,
+.product-card .product-price {
+  margin: 12px 14px 0;
+}
+
+.product-card h2 {
+  order: 2;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.product-card .product-price {
+  order: 1;
+  color: #222;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
