@@ -190,29 +190,333 @@
       <a class="breadcrumb-link active" href="luxury.html">Library</a>
     </li>
   </ol>
-</nav>
-<!-- filter -->
-<div class="container">
-   <div class="button-group filter-button-group">
-    <button data-filter="*">all</button>
-    <button data-filter=".human">human</button>
-    <button data-filter=".country">country</button>
-   </div>
-   <div class="grid">
-    <div class="element-item human">
-        <img src="image/man.png">
-        ali</div>
-    <div class="element-item country">
-        <img src="image/itlay3.png">
-        itlay</div>
-    <div class="element-item human">
-        <img src="image/woman.png">
-        hammad</div>
-    <div class="element-item country">
-        <img src="image/paris.png">
-        paris</div>
-   </div>
-  </div>  
+  <!-- filter -->
+  <main class="container rozana-products">
+    <nav class="category-filters" aria-label="Filter products by category">
+      <button class="category-filter is-active" type="button" data-category="all" aria-pressed="true">
+        <img src="image/rozana.png" alt="">
+        <span>All Products</span>
+      </button>
+      <button class="category-filter" type="button" data-category="lawn-2-piece" aria-pressed="false">
+        <img src="image/rozanacloth1" alt="">
+        <span>2 Piece Lawn</span>
+      </button>
+      <button class="category-filter" type="button" data-category="khadar" aria-pressed="false">
+        <img src="image/rozanacloth2" alt="">
+        <span>Khadar</span>
+      </button>
+      <button class="category-filter" type="button" data-category="lawn-3-piece" aria-pressed="false">
+        <img src="image/rozanacloth3" alt="">
+        <span>3 Piece Lawn</span>
+      </button>
+      <button class="category-filter" type="button" data-category="kurti" aria-pressed="false">
+        <img src="image/rozanacloth6" alt="">
+        <span>Lawn Kurti</span>
+      </button>
+    </nav>
+    <div class="product-toolbar">
+      <label for="price-sort">Sort by price</label>
+      <select id="price-sort">
+        <option value="none">back to orignal form</option>
+        <option value="ascending">Lowest to highest</option>
+        <option value="descending">Highest to lowest</option>
+      </select>
+    </div>
+
+
+    <!-- product1-->
+    <div class="grid product-grid" aria-live="polite">
+      <article class="element-item product-card" data-price="2500" data-category="lawn-2-piece">
+        <a href="rozanaproduct1.html"><img src="image/rozanacloth1" alt="Rozana clothing design 1">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+      favorite
+      </span>
+           <span class="material-symbols-outlined">
+         add
+       </span>
+        </button></a>
+        <h2>2 piece lawn</h2>
+        <h2>Rozana Design 1</h2>
+        <p class="product-price">Rs. 2,500</p>
+      </article>
+
+      <!-- product2 -->
+      <article class="element-item product-card" data-price="3200" data-category="khadar">
+        <a href="rozanaproduct2.html"><img src="image/rozanacloth2" alt="Rozana clothing design 2">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+         <h2>short khadar kuti</h2>
+        <h2>Rozana Design 2</h2>
+        <p class="product-price">Rs. 3,200</p>
+      </article>
+
+
+      <!-- product3 -->
+      <article class="element-item product-card" data-price="2800" data-category="lawn-3-piece">
+        <a href="rozanaproduct3.html"><img src="image/rozanacloth3" alt="Rozana clothing design 3">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+  </button></a>
+  <h2>lawn 3 piece</h2>
+    <h2>Rozana Design 3</h2>
+    <p class="product-price">Rs. 2,800</p>
+      </article>
+
+<!-- product4 -->
+      <article class="element-item product-card" data-price="3500" data-category="lawn-2-piece">
+        <a href="rozanaproduct4.html"><img src="image/rozanacloth5" alt="Rozana clothing design 4">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>lawn 2 piece</h2>
+        <h2>Rozana Design 4</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <!-- product5 -->
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+       <a href="rozanaproduct5.html"> <img src="image/rozanacloth6" alt="Rozana clothing design 4">
+       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+         <h2>lawn kurti</h2>
+        <h2>Rozana Design 5</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <!-- product6 -->
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+     <a href="rozanaproduct6.html"><img src="image/rozanacloth7" alt="Rozana clothing design 4">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 6</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct7.html"><img src="image/rozanacloth8" alt="Rozana clothing design 4">
+       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 7</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct8.html"><img src="image/rozanacloth10" alt="Rozana clothing design 4">
+       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 8</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct9.html"><img src="image/rozanacloth11" alt="Rozana clothing design 4">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 9</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct10.html"><img src="image/rozanacloth12" alt="Rozana clothing design 4">
+       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>khadar</h2>
+        <h2>Rozana Design 10</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct11.html"><img src="image/rozanacloth13" alt="Rozana clothing design 4">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 11</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct12.html"><img src="image/rozanacloth14" alt="Rozana clothing design 4">
+        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button>
+        </a>
+        <h2>lawn kurti</h2>
+        <h2>Rozana Design 12</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+      <article class="element-item product-card" data-price="3500" data-category="kurti">
+        <a href="rozanaproduct13.html"><img src="image/rozanacloth15" alt="Rozana clothing design 4">
+       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
+        <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="material-symbols-outlined">
+add
+</span>
+        </button></a>
+        <h2>khadar</h2>
+        <h2>Rozana Design 13</h2>
+        <p class="product-price">Rs. 3,500</p>
+      </article>
+
+    </div>
+    
+  </main>
+<!-- FOOTER -->
+ <footer class="footer-ecom" role="contentinfo">
+  <div class="container">
+  <div class="footer-ecom__main">
+  <div class="footer-ecom__links">
+  <h3 class="footer-ecom__heading">Customer Service</h3>
+  <ul>
+  <li><a href="#">Contact Us</a></li>
+   <li><a href="#">Track Your Order</a></li>
+  <li><a href="#">Shipping & Delivery</a></li>
+  <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-ecom__links">
+                    <h3 class="footer-ecom__heading">About Us</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                    </ul>
+                </div>
+                <div class="footer-ecom__links">
+                    <h3 class="footer-ecom__heading">My Account</h3>
+                    <ul>
+                        <li><a href="#">Sign In / Register</a></li>
+                        <li><a href="#">My Orders</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                        <li><a href="#">Account Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-ecom__newsletter">
+                    <h3 class="footer-ecom__heading">Stay Connected</h3>
+                    <p>Get exclusive deals, new product announcements, and more.</p>
+                    <form class="footer-ecom__newsletter-form">
+                        <label for="newsletter-email">Email Address</label>
+                        <input type="email" id="newsletter-email" class="footer-ecom__newsletter-input" placeholder="your@email.com">
+                        <button type="submit" class="footer-ecom__newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-ecom__bottom">
+                <p>© 2026 Rozana Atelier</p>
+                <div class="footer-ecom__socials" aria-label="Social media links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <script>
+    const priceSort = document.getElementById("price-sort");
+    const productGrid = document.querySelector(".product-grid");
+    const originalProducts = Array.from(productGrid.querySelectorAll(".product-card"));
+    const categoryFilters = Array.from(document.querySelectorAll(".category-filter"));
+
+    const filterProducts = (category) => {
+      originalProducts.forEach(product => {
+        product.hidden = category !== "all" && product.dataset.category !== category;
+      });
+    };
+
+    const sortProducts = () => {
+      const products = [...originalProducts];
+      if (priceSort.value === "none") {
+        products.forEach(product => productGrid.appendChild(product));
+        return;
+      }
+
+      const direction = priceSort.value === "ascending" ? 1 : -1;
+      products.sort((a, b) =>
+        (Number(a.dataset.price) - Number(b.dataset.price)) * direction
+      );
+      products.forEach(product => productGrid.appendChild(product));
+    };
+
+    priceSort.addEventListener("change", sortProducts);
+    categoryFilters.forEach(filter => {
+      filter.addEventListener("click", () => {
+        categoryFilters.forEach(categoryFilter => {
+          const isActive = categoryFilter === filter;
+          categoryFilter.classList.toggle("is-active", isActive);
+          categoryFilter.setAttribute("aria-pressed", String(isActive));
+        });
+        filterProducts(filter.dataset.category);
+      });
+    });
+    sortProducts();
+     
+     
+     
+  </script>
   <script src="js/jquery-4.0.0.js"></script>
  
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
