@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
+<script src="js/script.js"></script>
 </head>
 <body class="body">
     <!-- navbar -->
@@ -156,7 +156,6 @@
     <li class="nav-item nav-icon-item">
       <a class="nav-icon-link" href="wishlist.html" aria-label="Wishlist">
         <span class="material-symbols-outlined" aria-hidden="true">favorite</span>
-        <span id="wishlist-count">0</span>
       </a>
     </li>
     <li class="nav-search">
@@ -184,276 +183,39 @@
  <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item">
-      <a class="breadcrumb-link" href="index.html">Home</a>
+      <a class="breadcrumb-link" href="#">Home</a>
     </li>
     <li class="breadcrumb-divider"></li>
     <li class="breadcrumb-item" aria-current="page">
-      <a class="breadcrumb-link active" href="rozana.html">rozana</a>
+      <a class="breadcrumb-link active" href="luxury.html">Library</a>
     </li>
   </ol>
-  <!-- filter -->
-  <main class="container rozana-products">
-    <div class="product-toolbar">
-      <label for="price-sort">Sort by price</label>
-      <select id="price-sort">
-        
-        <option value="ascending">Lowest to highest</option>
-        <option value="descending">Highest to lowest</option>
-      </select>
-    </div>
-    <!-- product card -->
-    <div class="grid product-grid" aria-live="polite">
-      <article class="element-item product-card" data-price="2500">
-        <img src="image/rozanacloth1" alt="Rozana clothing design 1">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 1</h2>
-        <p class="product-price">Rs. 2,500</p>
-      </article>
-
-      <!-- product2 -->
-      <article class="element-item product-card" data-price="3200">
-        <img src="image/rozanacloth2" alt="Rozana clothing design 2">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 2</h2>
-        <p class="product-price">Rs. 3,200</p>
-      </article>
-      <!-- product3 -->
-      <article class="element-item product-card" data-price="2800">
-        <img src="image/rozanacloth3" alt="Rozana clothing design 3">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 3</h2>
-        <p class="product-price">Rs. 2,800</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth5" alt="Rozana clothing design 4">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 4</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth6" alt="Rozana clothing design 4">
-       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 5</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth7" alt="Rozana clothing design 4">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 6</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth8" alt="Rozana clothing design 4">
-       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 7</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth10" alt="Rozana clothing design 4">
-       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 8</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth11" alt="Rozana clothing design 4">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 9</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth12" alt="Rozana clothing design 4">
-       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 10</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth13" alt="Rozana clothing design 4">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 11</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth14" alt="Rozana clothing design 4">
-        <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-
-        <h2>Rozana Design 12</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-      <article class="element-item product-card" data-price="3500">
-        <img src="image/rozanacloth15" alt="Rozana clothing design 4">
-       <button class="wishlist-btn" aria-label="Add to wishlist" style="background: none; border: none;color: black; cursor: pointer;">
-        <span class="material-symbols-outlined">
-favorite
-</span>
-<span class="material-symbols-outlined">
-add
-</span>
-        </button>
-        <h2>Rozana Design 13</h2>
-        <p class="product-price">Rs. 3,500</p>
-      </article>
-
-    </div>
-    
-  </main>
-<!-- FOOTER -->
- <footer class="footer-ecom" role="contentinfo">
-  <div class="container">
-  <div class="footer-ecom__main">
-  <div class="footer-ecom__links">
-  <h3 class="footer-ecom__heading">Customer Service</h3>
-  <ul>
-  <li><a href="#">Contact Us</a></li>
-   <li><a href="#">Track Your Order</a></li>
-  <li><a href="#">Shipping & Delivery</a></li>
-  <li><a href="#">Returns & Exchanges</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-ecom__links">
-                    <h3 class="footer-ecom__heading">About Us</h3>
-                    <ul>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Store Locator</a></li>
-                    </ul>
-                </div>
-                <div class="footer-ecom__links">
-                    <h3 class="footer-ecom__heading">My Account</h3>
-                    <ul>
-                        <li><a href="#">Sign In / Register</a></li>
-                        <li><a href="#">My Orders</a></li>
-                        <li><a href="#">My Wishlist</a></li>
-                        <li><a href="#">Account Settings</a></li>
-                    </ul>
-                </div>
-                <div class="footer-ecom__newsletter">
-                    <h3 class="footer-ecom__heading">Stay Connected</h3>
-                    <p>Get exclusive deals, new product announcements, and more.</p>
-                    <form class="footer-ecom__newsletter-form">
-                        <label for="newsletter-email">Email Address</label>
-                        <input type="email" id="newsletter-email" class="footer-ecom__newsletter-input" placeholder="your@email.com">
-                        <button type="submit" class="footer-ecom__newsletter-button">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-ecom__bottom">
-                <p>© 2026 Rozana Atelier</p>
-                <div class="footer-ecom__socials" aria-label="Social media links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Pinterest</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-  <script>
-    const priceSort = document.getElementById("price-sort");
-    const productGrid = document.querySelector(".product-grid");
-
-    const sortProducts = () => {
-      const products = Array.from(productGrid.querySelectorAll(".product-card"));
-      const direction = priceSort.value === "ascending" ? 1 : -1;
-
-      products.sort((a, b) =>
-        (Number(a.dataset.price) - Number(b.dataset.price)) * direction
-      );
-      products.forEach(product => productGrid.appendChild(product));
-    };
-
-    priceSort.addEventListener("change", sortProducts);
-    sortProducts();
-     
-     
-     
-  </script>
+</nav>
+<!-- filter -->
+<div class="container">
+   <div class="button-group filter-button-group">
+    <button data-filter="*">all</button>
+    <button data-filter=".human">human</button>
+    <button data-filter=".country">country</button>
+   </div>
+   <div class="grid">
+    <div class="element-item human">
+        <img src="image/man.png">
+        ali</div>
+    <div class="element-item country">
+        <img src="image/itlay3.png">
+        itlay</div>
+    <div class="element-item human">
+        <img src="image/woman.png">
+        hammad</div>
+    <div class="element-item country">
+        <img src="image/paris.png">
+        paris</div>
+   </div>
+  </div>  
   <script src="js/jquery-4.0.0.js"></script>
-  <script src="js/script.js"></script>
-  
+ 
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
